@@ -1,0 +1,18 @@
+[package]
+name = "testing_unsafe"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.max]
+inherits = "release"
+strip = true
+lto = true
+panic = "abort"
+codegen-units = 1
+
+[dependencies]
+ahash = "0.8.2"
+smartstring = "1.0.1"
+parking_lot = "0.12.1"
