@@ -16,3 +16,5 @@ codegen-units = 1
 ahash = "0.8.2"
 smartstring = "1.0.1"
 parking_lot = "0.12.1"
+anyhow = "*"
+thiserror = "*"
